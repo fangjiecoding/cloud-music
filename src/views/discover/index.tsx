@@ -1,12 +1,21 @@
-import React, { memo } from 'react'
+import React, { memo, Suspense } from 'react'
 import type { ReactNode, FC } from 'react'
+import { Outlet } from 'react-router-dom'
+import NavBar from './c-cpns/nav-bar'
 
 interface IProps {
   children?: ReactNode
 }
 
 const Discover: FC<IProps> = () => {
-  return <div>Discover</div>
+  return (
+    <div>
+      <NavBar></NavBar>
+      <Suspense fallback="">
+        <Outlet></Outlet>
+      </Suspense>
+    </div>
+  )
 }
 
 export default memo(Discover)
