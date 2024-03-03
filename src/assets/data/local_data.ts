@@ -23,16 +23,28 @@ export const footerLinks = [
 
 export const footerImages = [
   {
-    link: 'https://music.163.com/st/userbasic#/auth'
+    link: 'https://developer.music.163.com/st/developer',
+    title: '音乐开放平台'
   },
   {
-    link: 'https://music.163.com/recruit'
+    link: 'https://music.163.com/st/web-sublicense/home',
+    title: '云村交易所'
   },
   {
-    link: 'https://music.163.com/web/reward'
+    link: 'https://web-amped.music.163.com/',
+    title: 'Amped Studio'
   },
   {
-    link: 'https://music.163.com/uservideo#/plan'
+    link: 'https://music.163.com/st/userbasic#/auth',
+    title: '用户认证'
+  },
+  {
+    link: 'https://music.163.com/st/ad-cms-bills/mlogin?from=mainStation',
+    title: '音乐交易平台'
+  },
+  {
+    link: 'https://music.163.com/web/reward',
+    title: '赞赏'
   }
 ]
 

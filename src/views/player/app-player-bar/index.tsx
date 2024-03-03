@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React, { memo, useEffect, useRef, useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import { Link } from 'react-router-dom'
@@ -170,7 +171,7 @@ const AppPlayerBar: FC<IProps> = () => {
           ></button>
         </BarControl>
         <BarPlayerInfo>
-          <Link to="/player">
+          <Link to="/">
             <img
               className="image"
               src={getImageSize(currentSong?.al?.picUrl, 50)}
